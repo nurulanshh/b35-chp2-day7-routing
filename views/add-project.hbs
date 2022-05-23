@@ -1,0 +1,144 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="public/assets/css/style.css" />
+    <title>Personal Web - Nurul Anisah</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-gray">
+      <div class="container">
+        <a class="navbar-brand me-5" href="/">
+          <img src="/public/assets/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active me-3" aria-current="page" href="/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-bold"
+                aria-current="page"
+                href="/add-project"
+                >Add Project</a
+              >
+            </li>
+          </ul>
+          <a class="btn bg-black text-white" href="/contact-me"> Contact Me </a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div
+      class="container-add-project-form d-flex justify-content-center align-items-center">
+      <form action="" class="m-0">
+        <h1 class="text-center mb-3 fs-3 fw-bold">ADD MY PROJECT</h1>
+        <div class="mb-2">
+          <label for="input-project-name" class="form-label fs-6 fw-bolder">Project Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="input-project-name"
+            placeholder="Your project name ..."
+          />
+        </div>
+        <div class="date mb-2 d-flex">
+        <div class="start-date mb-2 w-100">
+          <label for="input-title" class="form-label fs-6 fw-bolder">
+            Start Date</label>
+          <input
+            type="date"
+            class="form-control"
+            id="input-start-date"
+            placeholder="Your project name ..."
+          />
+        </div>  
+        <div class="end-date mb-2 w-100">
+          <label for="input-title" class="form-label fs-6 fw-bolder">
+            End Date</label>
+          <input
+            type="date"
+            class="form-control"
+            id="input-end-date"
+            placeholder="Your project name ..."
+          />
+        </div>
+        </div>
+        <div class="mb-2">
+          <label for="input-content" class="form-label fs-6 fw-bolder">Description</label>
+          <textarea
+            class="form-control"
+            id="input-description"
+            rows="3"
+            placeholder="Write here ..."
+          ></textarea>
+        </div>
+        <div class="mb-0">
+          <label for="input-image" class="form-label fs-6 fw-bolder">Technologies</label>
+        </div>
+        <div class="d-flex">
+          <div class="dv-kiri"> 
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="nodejs.png" id="flexChecNodeJS">
+              <label class="form-check-label text-gray fs-6 fw-semibold" for="flexChecNodeJS">
+               Node Js
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="reactjs.png" id="flexCheckReactJs">
+              <label class="form-check-label text-gray fs-6 fw-semibold" for="flexCheckReactJs">
+               React Js
+              </label>
+            </div>
+          </div>
+          <div class="dv-kanan"> 
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="js.png" id="flexCheckNextJs">
+              <label class="form-check-label text-gray fs-6 fw-semibold" for="flexCheckNextJs">
+               Next Js
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="typescript.png" id="flexCheTypeScript">
+              <label class="form-check-label text-gray fs-6 fw-semibold" for="flexCheTypeScript">
+               TypeScript
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mb-2 mt-3">
+          <label for="input-project-image" class="form-label fs-6 fw-bolder">Upload Image</label>
+          <input class="form-control" type="file" id="input-project-image" />
+        </div>
+
+        
+
+        <div class="text-end mt-3">
+         <a href="index.html" onclick="addProject()" class="btn bg-black mx-auto text-white px-4">submit</button></a>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/assets/js/home-my-project.js"></script>
+  </body>
+</html>
