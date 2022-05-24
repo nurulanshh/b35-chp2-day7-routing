@@ -38,7 +38,7 @@ app.get("/contact-me", (req, res) => {
     const data = req.body;
     console.log(data);
   
-    res.redirect("/add-project");
+    res.redirect("/");
 });
 
 app.get('/my-project-detail', (req, res) => {
